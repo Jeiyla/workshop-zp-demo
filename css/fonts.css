@@ -1,10 +1,18 @@
-/* pacifico-regular - latin */
+/* playfair-regular - latin */
 @font-face {
   font-display: swap;
-  font-family: "pacifico";
+  font-family: "playfair-reg";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pacifico-v22-latin-regular.woff2") format("woff2"), url("../fonts/pacifico-v22-latin-regular.woff") format("woff");
+  src: url("../fonts/playfair-display-v30-latin-regular.woff") format("woff2"), url("../fonts/playfair-display-v30-latin-regular.woff2") format("woff");
+}
+/* playfair-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "playfair-700";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v30-latin-700.woff") format("woff2"), url("../fonts/playfair-display-v30-latin-700.woff2") format("woff");
 }
 /* open-sans-regular - latin */
 @font-face {

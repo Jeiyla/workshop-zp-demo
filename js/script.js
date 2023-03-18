@@ -1,5 +1,6 @@
 const links = document.querySelector(".links"),
-headerEl = document.querySelector("header"),
+headerEl = document.querySelector("header")
+bodyEl = document.querySelector("body"),
 toggleBtn = document.querySelector(".toggle-btn"),
 toogleBtnIcon = document.querySelector(".toggle-btn i"),
 popupViews = document.querySelectorAll(".popup-view"),
@@ -41,6 +42,7 @@ toggleBtn.onclick = function () {
 // prodcut quick view btn
 var popup = function(popupClick){
   popupViews[popupClick].classList.add("active");
+  bodyEl.classList.add("active-popup"); 
 }
 
 popupBtns.forEach((popupBtn, i) => {
@@ -54,6 +56,17 @@ closeBtns.forEach((closeBtn) => {
   closeBtn.addEventListener("click", () => {
     popupViews.forEach((popupView) => {
       popupView.classList.remove("active");
+      bodyEl.classList.remove("active-popup");
     });
   });
 });
+
+
+
+
+
+
+
+
+
+
