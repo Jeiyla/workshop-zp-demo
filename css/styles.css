@@ -63,7 +63,7 @@ h2.name {
 
 .text-max-width {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -90,12 +90,12 @@ h2.name {
   align-items: center;
 }
 
-.link.active,
-.link:hover {
+.links .link.active,
+.links .link:hover {
   color: var(--secondary);
 }
 
-.link {
+.links .link {
   color: var(--white);
   transition: all 0.2s ease-in-out;
   font-size: 1.2rem;
@@ -178,7 +178,8 @@ section#hero .cta-wrapper {
   margin-right: 20px;
 }
 
-.herowrapper {
+.herowrapper,
+.subwrapper {
   height: 100vh;
   background-color: #3e3e3e;
   background-image: url(../img/carlo-hero-img-01.webp);
@@ -202,9 +203,6 @@ section#hero .cta-wrapper {
 .subpage {
   height: 70vh;
 }
-
-
-
 
 
 
@@ -246,10 +244,34 @@ section#hero .cta-wrapper {
 
 
 
+/* -------------- contact form -------------- */
 
+#kontakt-form {
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 70px auto 0 auto;
+  background-color: var(--primary);
+}
 
+form {
+  padding: 50px;
+  color: var(--white);
+  /* display: flex; */
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
+.form-wrapper {
+  /* display: flex; */
+  flex-direction: column;
+  /* width: 48%; */
+}
 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 10px;
+}
 
 
 
@@ -300,9 +322,9 @@ section#hero .cta-wrapper {
   z-index: 2;
   color: var(--white);
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
-  bottom: 130px;
+  bottom: 100px;
   margin: 10px;
   line-height: 2.4rem;
 }
@@ -459,8 +481,20 @@ section#hero .cta-wrapper {
   gap: 10px 20px;
 }
 
+.footer-links .link {
+  color: var(--white);
+}
+
+.footer-links .link:hover,
+.footer-links .link.active {
+  color: var(--secondary);
+}
+
 .copyright{
   text-align: center;
+  margin-top: 20px;
+  color: var(--white);
+  font-size: 0.9rem;
 }
 
 
